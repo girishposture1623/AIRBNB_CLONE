@@ -1,0 +1,55 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+<nav>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" height="32" alt="Airbnb">
+
+  <div class="search-pill">
+    <span>Anywhere</span> | <span>Any week</span> |
+    <span style="color:#717171">Add guests</span>
+  </div>
+
+  <div class="profile">
+    <i class="fa-solid fa-globe"></i>
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-circle-user"></i>
+  </div>
+</nav>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+  <div class="gallery-main">
+    <img src="<%= hotel.images[0] %>" alt="hotel-main">
+  </div>
+
+  <div class="gallery-flex">
+    <% hotel.images.forEach((img, i) => { %>
+      <div class="flex-item">
+        <img src="<%= img %>" alt="hotel-<%= i %>">
+      </div>
+    <% }) %>
+  </div>
+
+</div>
+
+<!-- DETAILS -->
+<h3><%= hotel.desc %></h3>
+
+<p>
+  ₹<%= hotel.price %> for <%= hotel.nights %> nights
+  <span>★ <%= hotel.rating.toFixed(1) %></span>
+</p>
+
+</body>
+</html>

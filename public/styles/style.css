@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 5rem;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.logo img {
+  height: 32px;
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+}
+
+.menu li a img {
+  height: 5rem;
+}
+
+.menu li a:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.hotel {
+  display: flex;
+  gap: 0.1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem 1rem;
+  scrollbar-width: none;
+}
+
+.card {
+  position: relative;
+  min-width: 18rem;
+  padding: 1rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  object-fit: cover;
+  display: block;
+}
+
+.fav {
+  position: absolute;
+  top: 2rem;
+  left: 1.8rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #333;
+  z-index: 10;
+}
+h1 > a {
+  text-decoration: none;
+  color: black;
+}
+.card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}
+h1 {
+  margin-left: 2rem;
+}
+.gallery {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  background-color: black;
+  /* overflow: hidden; */
+  /* max-width: 70rem; */
+
+  margin: 1.25rem auto;
+  padding: 1rem;
+}
+
+.gallery-main {
+  height: 420px;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flex-item {
+  height: 206px;
+}
+
+.flex-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.show-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  background: #f7f7f7;
+}
+/*  */
+:root {
+  --airbnb-red: #ff385c;
+  --text-main: #222222;
+  --text-secondary: #717171;
+  --border-light: #dddddd;
+}
+
+/* body {
+            font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.5;
+        } */
+
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fcfcfc;
+  border-bottom: solid 0.1rem #ebebeb;
+  height: 12rem;
+  width: 100%;
+}
+nav.shrink {
+  height: 5rem;
+  transition:
+    height 0.3s ease,
+    background-color 0.3s ease;
+  /* background-color: #7fffd4; */
+}
+.container.shrink {
+  width: 50%;
+  position: fixed;
+  height: 3rem;
+  top: 1rem;
+  /* width: 50%; */
+  transition:
+    height 0.3s ease,
+    background-color 0.3s ease;
+}
+/*  */
+.circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #EBEBEB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.circle img{
+  width: 1.5rem;
+}
+/*  */
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 3rem;
+  /* position: fixed; */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.paragraph {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: bold;
+}
+.box1 .logo img {
+  width: 5rem;
+}
+.box img {
+  width: 3rem;
+}
+.box2,.box,.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* flex-shrink: 0; */
+  margin-top: 1rem;
+}
+
+.c1 {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.container {
+  width: 70%;
+  height: 4rem;
+  background-color: white;
+  border-radius: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  border: solid 0.1rem #ebebeb;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1rem;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+    padding: 1rem;
+    color: #717171;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search:hover {
+  background-color: #ebebeb;
+  transform: scale(1.02);
+}
+
+.search:active {
+  transform: scale(0.98);
+}
+.vertile {
+  background-color: black;
+  width: 0.2rem;
+  height: 2.5rem;
+}
+/*  */
+/* nav {
+  border-bottom: 1px solid #ebebeb;
+  padding: 16px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+} */
+
+.search-pill {
+  border: 1px solid var(--border-light);
+  border-radius: 40px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Photo Gallery Grid */
+.photo-section {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.photo-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.photo-section img:hover {
+  filter: brightness(0.9);
+}

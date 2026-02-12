@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <%- include("partials/header") %>
+
+    <div>
+  <h1>
+    <a href="">Available in Raigad this weekend</a>
+  </h1>
+
+  <div id="hotelContainer" class="hotel">
+    <% hotel.filter(p => p.category == "pune").forEach(p => { %>
+      <div class="card">
+        <a href="/hotel/<%= p.id %>">
+          <img src="<%= p.image %>" alt="" />
+        </a>
+         <div class="card" id="card1"></div>
+        <h3><%= p.desc %></h3>
+        <p>
+          ₹<%= p.price %> for <%= p.nights %> nights
+          <span>★<%= p.rating.toFixed(1) %></span>
+        </p>
+        <p class="fav"><%= p.favourite %></p>
+      </div>
+    <% }) %>
+  </div>
+
+   
+
+  <div id="hotelContainer" class="hotel">
+    <% Data.forEach(p => { %>
+      <div class="card">
+        <a href="/hotel/<%= p.id %>">
+          <img src="<%= p.photo %>" alt="" />
+        </a>
+         <div class="card" id="card1"></div>
+        <h3><%= p.desc %></h3>
+        <p>
+          ₹<%= p.rent %> for <%= p.nights %> nights
+        </p>
+        <p class="fav"><%= p.favourite %></p>
+      </div>
+    <% }) %>
+  </div>
+
+
+      <div>
+      <h1><a href="">Popular Homes in Pune > </h1>
+      <div id="hotelContainer" class="hotel">
+        <% hotel .filter(p => p.category == "pune") .forEach(p => { %>
+        <div class="card">
+          <a href="/<%= p.id %>"><img src="<%= p.image%>" alt="" /></a>
+          <h3><%= p.desc %></h3>
+          <p>₹<%= p.price %> for <%=p.nights%> nights  <span>★<%= p.rating.toFixed(1) %></span></p>
+         
+          <p class="fav"><%= p.favourite %></p>
+        </div>
+        <% }) %>
+      </div>
+
+      <div>
+      <h1><a href="">Popular Homes in Pune ></h1>
+      <div id="hotelContainer" class="hotel">
+        <% hotel .filter(p => p.category == "pune") .forEach(p => { %>
+        <div class="card">
+          <a href="/<%= p.id %>"><img src="<%= p.image%>" alt="" /></a>
+          <h3><%= p.desc %></h3>
+          <p>₹<%= p.price %> for <%=p.nights%> nights  <span>★<%= p.rating.toFixed(1) %></span></p>
+         
+          <p class="fav"><%= p.favourite %></p>
+        </div>
+        <% }) %>
+      </div>
+
+      <div>
+      <h1><a href="">Popular Homes in Pune ></h1>
+      <div id="hotelContainer" class="hotel">
+        <% hotel .filter(p => p.category == "pune") .forEach(p => { %>
+        <div class="card">
+          <a href="/<%= p.id %>"><img src="<%= p.image%>" alt="" /></a>
+          <h3><%= p.desc %></h3>
+          <p>₹<%= p.price %> for <%=p.nights%> nights  <span>★<%= p.rating.toFixed(1) %></span></p>
+         
+          <p class="fav"><%= p.favourite %></p>
+        </div>
+        <% }) %>
+      </div>
+
+      <div>
+      <h1><a href="">Popular Homes in Pune ></h1>
+      <div id="hotelContainer" class="hotel">
+        <% hotel .filter(p => p.category == "pune") .forEach(p => { %>
+        <div class="card">
+          <a href="/<%= p.id %>"><img src="<%= p.image%>" alt="" /></a>
+          <h3><%= p.desc %></h3>
+          <p>₹<%= p.price %> for <%=p.nights%> nights  <span>★<%= p.rating.toFixed(1) %></span></p>
+         
+          <p class="fav"><%= p.favourite %></p>
+        </div>
+        <% }) %>
+      </div>
+  </body>
+  <%- include("partials/footer") %>
+</html>

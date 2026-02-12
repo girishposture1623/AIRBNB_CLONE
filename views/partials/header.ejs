@@ -1,0 +1,84 @@
+<header>
+  <!-- <nav class="navbar">
+        <div class="logo">
+            <a href="/"><img src="./logo/Airbnb_Symbol_1.png" alt=""></a>
+        </div>
+        <ul class="menu">
+            <li><a href="/"><img src="./logo/house.png" alt=""> Homes</a></li>
+            <li><a href="/"><img src="./logo/hot-air-balloon.png" alt="">Experiences</a></li>
+            <li><a href="/"><img src="./logo/services.png" alt="">Services<a></li>
+        </ul>
+    </nav> -->
+  <nav>
+    <div class="contain">
+      <div class="box1">
+        <div class="logo">
+          <img src="./logo/Airbnb_Logo_1.png" alt="" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="box" id="bb1">
+          <img src="./logo/house.png" alt="" />
+          <span>Homes</span>
+        </div>
+        <div class="box" id="bb3">
+          <img src="./logo/hot-air-balloon.png" alt="" />
+          <span>expreince</span>
+        </div>
+        <div class="box" id="bb4">
+          <img src="./logo/services.png" alt="" /><span>Services</span>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="circle"><a href="/user/"><img src="./logo/language.png" alt="" /></a></div>
+        <div class="circle"><img src="./logo/menu.png" alt="" /></div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="c1">
+      <div class="container">
+        <div class="search">
+          <div id="search_w">where</div>
+          <div>search desstination</div>
+        </div>
+        <div class="vertile"></div>
+        <div class="search">
+          <div id="search_w">when</div>
+          <div>Add dates</div>
+        </div>
+        <div class="vertile"></div>
+        <div class="search">
+          <div id="search_w">who</div>
+          <div>Add guests</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  window.addEventListener("scroll", function () {
+    const nav = document.querySelector("nav");
+    const c1 = document.querySelector(".container");
+    const body = document.body;
+    const b3 = document.getElementById("bb1");
+    const b4 = document.getElementById("bb3");
+    const b5 = document.getElementById("bb4");
+
+    if (window.scrollY > 100) {
+      nav.classList.add("shrink");
+      c1.classList.add("shrink");
+      b3.style.display = "none";
+      b4.style.display = "none";
+      b5.style.display = "none";
+      body.classList.add("has-fixed-search");
+    } else {
+      nav.classList.remove("shrink");
+      c1.classList.remove("shrink");
+      body.classList.remove("has-fixed-search");
+      b3.style.display = "";
+      b4.style.display = "";
+      b5.style.display = "";
+    }
+  });
+</script>
